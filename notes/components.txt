@@ -1,0 +1,11 @@
+
+Everything the component needs is passed through context, which is an object containing:
+
+props
+children
+slots
+scopedSlots
+data
+parent
+listeners (data.on)
+injections

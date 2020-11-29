@@ -1,0 +1,50 @@
+
+REFERENCES
+
+$emit
+$on
+$once
+$off
+$parent
+$root
+
+
+
+$options
+$refs
+$slots
+
+dispatchEvent
+addEventListener
+removeEventListener
+
+$forceUpdate
+
+
+// @returns {VNode}
+createElement(
+  // {String | Object | Function}
+  // An HTML tag name, component options, or async
+  // function resolving to one of these. Required.
+  'div',
+
+  // {Object}
+  // A data object corresponding to the attributes
+  // you would use in a template. Optional.
+  {
+    // (see details in the next section below)
+  },
+
+  // {String | Array}
+  // Children VNodes, built using `createElement()`,
+  // or using strings to get 'text VNodes'. Optional.
+  [
+    'Some text comes first.',
+    createElement('h1', 'A headline'),
+    createElement(MyComponent, {
+      props: {
+        someProp: 'foobar'
+      }
+    })
+  ]
+)

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Default Title</title>
+        <link rel="shortcut icon" type="image/icon" href="/assets/vueLogo.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/message.css">
+        <link rel="stylesheet" href="style/modal.css">
+    </head>
+    <body>
+        <div id="app">
+            <router-view></router-view>
+        </div>
+        <modal v-if="showModal" @close="showModal = false">
+            <h3 slot="header">custom header</h3>
+        </modal>
+        <script type="module" src="app/main.js"></script>
+    </body>
+</html>

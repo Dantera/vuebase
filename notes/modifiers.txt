@@ -1,0 +1,13 @@
+
+// https://vuejs.org/v2/guide/render-function.html
+
+.passive
+.capture
+.once
+.capture.once OR .once.capture
+
+.stop
+.prevent
+.self
+.enter, .13
+.ctrl, .alt, .shift, .meta
